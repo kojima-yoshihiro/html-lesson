@@ -45,9 +45,18 @@ a:active {
   color: #4b6700;
 }
 
+body, div, p, h1, h2, h3, h4, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
+p, td, th, li {
+  line-height: 1.8;
+}
+
 .header {
   background-color: #c84040;
-  height: 70px;
+  height: auto;
 }
 
 .header__inner {
@@ -60,6 +69,36 @@ a:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.header__logo {
+  padding: 10px 0;
+  width: 160px;
+  height: 37px;
+}
+
+@media screen and (min-width: 768px) {
+  .header__logo {
+    padding: 20px 0;
+    width: 200px;
+    height: 46px;
+  }
+}
+
+.menu-btn {
+  padding: 10px 0;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 40px;
+  height: 40px;
+  background: url(/img/hamburger.png) no-repeat;
+  background-size: contain;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
 }
 
 .nav {
@@ -106,7 +145,7 @@ a:active {
 .main {
   padding: 50px 0;
   background-color: #efefef;
-  height: 600px;
+  height: auto;
 }
 
 @media screen and (min-width: 768px) {

@@ -1,9 +1,33 @@
 .header {
   background-color: $color-red;
-  height: 70px;
+  height: auto;
   &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  &__logo {
+    padding: 10px 0;
+    width: 160px;
+    height: 37px;
+    @include mq('tab') {
+      padding: 20px 0;
+      width: 200px;
+      height: 46px;
+    }
+  }
+}
+
+.menu-btn {
+  padding: 10px 0;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 40px;
+  height: 40px;
+  background: url(/img/hamburger.png) no-repeat;
+  background-size: contain;
+
+  @include mq('tab') {
+    display: none;
   }
 }
