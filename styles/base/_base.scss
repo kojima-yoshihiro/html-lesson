@@ -19,7 +19,7 @@ body {
 }
 
 .container {
-  @extend .content-width
+  @extend .content-width;
 }
 
 img {
