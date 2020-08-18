@@ -1,0 +1,28 @@
+@charset "UTF-8";
+//===================================
+//サイトの基本設定
+//===================================
+
+//幅関係の設定 -------------------
+$width-base: 1000px; //全体
+
+
+//フォント関係の設定 -------------
+$font-base: sans-serif;
+$font-serif: 'Yu Mincho', serif;
+
+
+//色関係の設定 -------------------
+//サイトカラー
+$color-main: #efefef;
+$color-red: #c84040;
+
+//フォントカラー
+$color-font: #393939;
+$color-mainTitle: #333;
+$color-SubTitle: #7e7e7e;
+
+//リンクカラー
+$color-link: #709a00;
+$color-hover: #95cd00;
+$color-active: #4b6700;

@@ -1,0 +1,28 @@
+.nav {
+  background-color: #393939;
+  &__list {
+    display: none;
+    list-style-type: none;
+    @include mq('tab') {
+      display: flex;
+    }
+  }
+  &__item {
+    @include mq('tab') {
+      flex: 1 1 auto;
+      text-align: center;
+    }
+  }
+  &__link {
+    display: block;
+    padding: 0.6rem 0;
+    color: #fff;
+    text-decoration: none;
+    &:hover {
+      background: $color-red;
+    }
+    &.nav-current {
+      background: $color-red;
+    }
+  }
+}

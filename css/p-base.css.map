@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../styles/mixin/p-base.scss"
+    ],
+    "names": [],
+    "file": "p-base.css"
+}

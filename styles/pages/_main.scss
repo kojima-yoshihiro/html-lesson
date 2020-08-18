@@ -1,0 +1,8 @@
+.main {
+  padding: 50px 0;
+  background-color: $color-main;
+  height: 600px;
+  @include mq('tab') {
+    padding: 0 30px;
+  }
+}

@@ -1,0 +1,9 @@
+.header {
+  background-color: $color-red;
+  height: 70px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

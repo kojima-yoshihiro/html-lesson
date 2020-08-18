@@ -1,0 +1,10 @@
+.nav {
+  background-color: #393939;
+  height: 70px;
+}
+
+.nav__list {
+  display: none;
+  list-style-type: none;
+}
+/*# sourceMappingURL=nav.css.map */

@@ -1,0 +1,45 @@
+body {
+  font-size: 1rem;
+  font-family: $font-base;
+  color: $color-font;
+  background-color: $color-main;
+  background-size: 100%;
+  line-height: 1.8;
+  letter-spacing: 0.05rem;
+  overflow-x: hidden;
+}
+
+.content-width  {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: $width-base;
+  @include mq('tab') {
+    padding: 0 20px;
+  }
+}
+
+.container {
+  @extend .content-width
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.img-responsive {
+  display: block;
+  min-width: 100%;
+  height: auto;
+}
+
+a {
+  color: $color-link;
+  &:hover {
+    color: $color-hover;
+    text-decoration: none;
+  }
+  &:active {
+    color: $color-active;
+  }
+}
