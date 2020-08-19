@@ -151,7 +151,7 @@ p, td, th, li {
 
 @media screen and (min-width: 768px) {
   .main {
-    padding: 0 30px;
+    padding: 50px 30px;
   }
 }
 
