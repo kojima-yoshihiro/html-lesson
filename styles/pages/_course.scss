@@ -1,0 +1,106 @@
+.course {
+
+  /* コース概要 */
+  &__container {
+    display: flex;
+    flex-flow: column;
+    @include mq('tab') {
+      flex-flow: row;
+    }
+  }
+
+  &__image {
+    @include mq('tab') {
+      flex: 1 1 400px;
+      margin-right: 20px;
+    }
+    img {
+      border-radius: 10px;
+    }
+  }
+
+  &__text {
+    @include mq('tab') {
+      flex: 1 1 580px;
+    }
+  }
+
+  &__list {
+    list-style-type: none;
+  }
+
+  &__label {
+    display: inline-block;
+    padding: 0.1rem 0.5rem;
+    margin-right: 0.1rem;
+    background: $color-red;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 0.7rem;
+  }
+
+  /* コース説明 */
+  &__description {
+    margin-top: 30px;
+    padding: 30px;
+    background: #fff url(../../img/point.png) no-repeat;
+    background-size: 50px 50px;
+    border-radius: 10px;
+  }
+
+  /* スケジュール */
+  &__schedule {
+    border-collapse: collapse;
+
+    td,
+    th {
+      padding: 0.5em 1em;
+      border-bottom: 1px dotted #aeaeae;
+    }
+  }
+
+  /* 講師プロフィール */
+  &__instructor {
+    overflow: hidden;
+    img {
+      float: left;
+      margin-right: 20px;
+      border-radius: 50%;
+      width: 20%;
+    }
+
+    & .-name {
+      font-size: 1.2rem;
+      font-weight: bold;
+      padding: 1rem 0 0.5rem 0;
+    }
+  }
+  /* お申し込みボタン */
+  &__btn {
+    display: block;
+    width: 300px;
+    margin: 30px auto;
+    padding: 1rem 0;
+    background-color: #709a00;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    &:hover {
+      background-color: #95cd00;
+      color: #fff;
+    }
+  }
+}
+
+.course-h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+.course-h3 {
+  font-size: 1.3rem;
+  margin: 30px 0 10px 0;
+  color: $color-red;
+  border-bottom: 1px dashed $color-red;
+}
